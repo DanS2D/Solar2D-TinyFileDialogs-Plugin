@@ -1,0 +1,8 @@
+﻿mac/Plugin.xcodeproj/project.xcworkspace
+mac/Plugin.xcodeproj/project.pbxproj
+win32/.vs
+win32/Debug
+win32/Release
+win32/Plugin.vcxproj.filters
+win32/Plugin.vcxproj.user
+shared/taglib/.vs
