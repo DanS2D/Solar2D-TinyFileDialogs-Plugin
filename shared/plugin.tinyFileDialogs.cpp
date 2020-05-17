@@ -205,9 +205,9 @@ namespace Corona
 					std::vector<std::string> splitString = StringSplit(filePathString, delimiter[0]);
 					lua_newtable(L);
 
-					for (int i = 0; i < splitString.size(); i++)
+					for (int i = 1; i <= splitString.size(); i++)
 					{
-						lua_pushstring(L, splitString[i].c_str());
+						lua_pushstring(L, splitString[i - 1].c_str());
 						lua_rawseti(L, -2, i);
 					}
 				}
