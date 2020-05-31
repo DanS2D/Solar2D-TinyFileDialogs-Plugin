@@ -22,6 +22,9 @@ settings =
 		["plugin.tinyFileDialogs"] =
 		{
 			publisherId = "com.revolt64",
+			supportedPlatforms = {
+				["win32-sim"] = { url = "https://github.com/DannyGlover/Solar2D-TinyFileDialogs-Plugin/raw/master/dist/v1/win32-sim/data.tgz" }
+			}
 		},
 	},
 

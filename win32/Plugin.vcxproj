@@ -34,7 +34,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120_xp</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -157,8 +157,8 @@
     </Link>
     <PostBuildEvent />
     <PostBuildEvent>
-      <Command>copy "$(OutDir)$(TargetName).dll" "C:\Users\Danny\Programming\Projects\CoronaSDK\Plugins\distribution\tinyFileDialogs\$(TargetName).dll"
-cd "C:\Users\Danny\Programming\Projects\CoronaSDK\Plugins\distribution\tinyFileDialogs\"
+      <Command>copy "$(OutDir)$(TargetName).dll" "C:\Users\Danny\Programming\Projects\Solar2D\Plugins\distribution\tinyFileDialogs\$(TargetName).dll"
+cd "C:\Users\Danny\Programming\Projects\Solar2D\Plugins\distribution\tinyFileDialogs\"
 call make_plugin.bat
 rmdir /S /Q "C:\Users\Danny\AppData\Roaming\Corona Labs\Corona Simulator\Plugins"</Command>
     </PostBuildEvent>

@@ -10,6 +10,8 @@
 
 // ----------------------------------------------------------------------------
 
+using namespace std;
+
 namespace Corona
 {
 	// ----------------------------------------------------------------------------
@@ -105,11 +107,11 @@ namespace Corona
 
 	// ----------------------------------------------------------------------------
 
-	static std::vector<std::string> StringSplit(const std::string& s, char delim)
+	static vector<string> StringSplit(const string& s, char delim)
 	{
-		std::vector<std::string> result;
-		std::stringstream stringStream(s);
-		std::string item;
+		vector<string> result;
+		stringstream stringStream(s);
+		string item;
 
 		while (getline(stringStream, item, delim))
 		{
@@ -197,12 +199,12 @@ namespace Corona
 
 			if (filePath != NULL)
 			{
-				std::string filePathString = filePath;
+				string filePathString = filePath;
 				const char delimiter[] = "|";
 
-				if (filePathString.find(delimiter) != std::string::npos)
+				if (filePathString.find(delimiter) != string::npos)
 				{
-					std::vector<std::string> splitString = StringSplit(filePathString, delimiter[0]);
+					vector<string> splitString = StringSplit(filePathString, delimiter[0]);
 					lua_newtable(L);
 
 					for (int i = 1; i <= splitString.size(); i++)
