@@ -7,7 +7,7 @@ local tfd = require("plugin.tinyFileDialogs")
 local widget = require("widget")
 local json = require("json")
 local isWindows = system.getInfo("platform") == "win32"
-local userHomeDocumentsPath = isWindows and "%HOMEPATH%\\Documents\\" or "~/Documents"
+local userHomeDocumentsPath = isWindows and "%HOMEPATH%\\Documents\\" or os.getenv("HOME")
 
 local openFileDialog =
 	widget.newButton(
