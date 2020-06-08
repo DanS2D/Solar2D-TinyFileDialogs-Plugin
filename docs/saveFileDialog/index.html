@@ -115,7 +115,7 @@ local savedFile =
     tinyFileDialogs.saveFileDialog(
     {
         title = &quot;Save file as&quot;,
-        initialPath = &quot;C:\\&quot;,
+        initialPath = os.getenv(&quot;HOME&quot;),
         filters = {&quot;*.txt&quot;, &quot;*.rtf&quot;, &quot;*.md&quot;, &quot;*.doc&quot;, &quot;*.docx&quot;},
         singleFilterDescription = &quot;Text File(s)| *.txt;*.rtf;*.md;*.doc;*.docx etc&quot;
     }

@@ -108,7 +108,7 @@ local foundFolder =
     tinyFileDialogs.openFolderDialog(
     {
         title = &quot;Select Folder&quot;,
-        initialPath = &quot;C:\\&quot;
+        initialPath = os.getenv(&quot;HOME&quot;)
     }
 )
 

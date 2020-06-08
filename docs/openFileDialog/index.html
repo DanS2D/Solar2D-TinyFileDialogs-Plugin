@@ -118,7 +118,7 @@ local foundFiles =
     tinyFileDialogs.openFileDialog(
     {
         title = &quot;Select Files (limited to 32 files)&quot;,
-        initialPath = &quot;C:\\&quot;,
+        initialPath = os.getenv(&quot;HOME&quot;),
         filters = {&quot;*.txt&quot;, &quot;*.rtf&quot;, &quot;*.md&quot;, &quot;*.doc&quot;, &quot;*.docx&quot;},
         singleFilterDescription = &quot;Text File(s)| *.txt;*.rtf;*.md;*.doc;*.docx etc&quot;,
         multiSelect = true
