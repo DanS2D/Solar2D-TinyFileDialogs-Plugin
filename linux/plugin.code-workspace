@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../opt/Solar2D/Resources/PluginDependencies/shared/include/corona"
+		},
+		{
+			"path": "../shared"
+		},
+		{
+			"path": "."
+		}
+	]
+}

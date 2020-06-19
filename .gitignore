@@ -6,3 +6,8 @@ win32/Release
 win32/Plugin.vcxproj.filters
 win32/Plugin.vcxproj.user
 shared/taglib/.vs
+linux/tinyFileDialogs
+linux/tinyFileDialogs.txt
+*.d
+linux/Release/plugin.tinyFileDialogs.so
+*.o
