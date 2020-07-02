@@ -11,3 +11,7 @@ linux/tinyFileDialogs.txt
 *.d
 linux/Release/plugin.tinyFileDialogs.so
 *.o
+.codelite
+linux/compile_flags.txt
+linux/build-**
+linux/*.mk
