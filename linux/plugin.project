@@ -67,7 +67,8 @@
     <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
       <Compiler Options="-O2;-g3;-fPIC;-std=c++11;-Wfatal-errors;-Wno-narrowing" C_Options="-O2;-g3;-fPIC;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
         <IncludePath Value="."/>
-        <IncludePath Value="/opt/Solar2D/Resources/PluginDependencies/shared/include/corona"/>
+        <IncludePath Value="lua"/>
+        <IncludePath Value="Corona"/>
       </Compiler>
       <Linker Options="-s" Required="yes"/>
       <ResourceCompiler Options="" Required="no"/>
